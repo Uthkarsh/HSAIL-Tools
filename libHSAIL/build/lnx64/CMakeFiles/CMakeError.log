@@ -1,0 +1,649 @@
+Performing C++ SOURCE FILE Test DW_CONST failed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3766411480/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3766411480.dir/build.make CMakeFiles/cmTryCompileExec3766411480.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3766411480.dir/src.cxx.o
+/usr/bin/c++    -DDW_CONST -std=c++0x   -o CMakeFiles/cmTryCompileExec3766411480.dir/src.cxx.o -c /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:128: error: invalid conversion from ‘int (*)(const char*, int, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned*, Dwarf_Ptr, int*) {aka int (*)(const char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ to ‘Dwarf_Callback_Func {aka int (*)(char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, int*, int*)}’ [-fpermissive]
+       int main() { dwarf_producer_init(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr); return 0; }
+                                                                                                                                ^
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:128: error: too many arguments to function ‘Dwarf_P_Debug_s* dwarf_producer_init(Dwarf_Unsigned, Dwarf_Callback_Func, Dwarf_Handler, Dwarf_Ptr, Dwarf_Error_s**)’
+In file included from /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:2:0:
+/usr/include/libdwarf.h:2246:15: note: declared here
+ Dwarf_P_Debug dwarf_producer_init(
+               ^
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3766411480.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec3766411480/fast] Error 2
+
+Source file was:
+
+      #include <libdwarf.h>
+      #include <cstddef>
+      int dwarfCallback(const char * a, int b, Dwarf_Unsigned c,
+        Dwarf_Unsigned d, Dwarf_Unsigned e, Dwarf_Unsigned f,
+        Dwarf_Unsigned * g, Dwarf_Ptr h, int * i) {}
+      int main() { dwarf_producer_init(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr); return 0; }
+Performing C++ SOURCE FILE Test DW_CONST failed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec999424701/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec999424701.dir/build.make CMakeFiles/cmTryCompileExec999424701.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec999424701.dir/src.cxx.o
+/usr/bin/c++    -DDW_CONST -std=c++0x   -o CMakeFiles/cmTryCompileExec999424701.dir/src.cxx.o -c /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:94: error: invalid conversion from ‘int (*)(const char*, int, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned*, Dwarf_Ptr, int*) {aka int (*)(const char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ to ‘Dwarf_Callback_Func_c {aka int (*)(char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ [-fpermissive]
+       int main() { dwarf_producer_init_c(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr); return 0; }
+                                                                                              ^
+In file included from /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:2:0:
+/usr/include/libdwarf.h:2207:15: error:   initializing argument 2 of ‘Dwarf_P_Debug_s* dwarf_producer_init_c(Dwarf_Unsigned, Dwarf_Callback_Func_c, Dwarf_Handler, Dwarf_Ptr, void*, Dwarf_Error_s**)’ [-fpermissive]
+ Dwarf_P_Debug dwarf_producer_init_c(
+               ^
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec999424701.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec999424701/fast] Error 2
+
+Source file was:
+
+      #include <libdwarf.h>
+      #include <cstddef>
+      int dwarfCallback(const char * a, int b, Dwarf_Unsigned c,
+        Dwarf_Unsigned d, Dwarf_Unsigned e, Dwarf_Unsigned f,
+        Dwarf_Unsigned * g, Dwarf_Ptr h, int * i) {}
+      int main() { dwarf_producer_init_c(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr); return 0; }
+Performing C++ SOURCE FILE Test DW_CONST failed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3456627187/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3456627187.dir/build.make CMakeFiles/cmTryCompileExec3456627187.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3456627187.dir/src.cxx.o
+/usr/bin/c++    -DDW_CONST -std=c++0x   -o CMakeFiles/cmTryCompileExec3456627187.dir/src.cxx.o -c /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:128: error: invalid conversion from ‘int (*)(const char*, int, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned*, Dwarf_Ptr, int*) {aka int (*)(const char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ to ‘Dwarf_Callback_Func {aka int (*)(char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, int*, int*)}’ [-fpermissive]
+       int main() { dwarf_producer_init(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr); return 0; }
+                                                                                                                                ^
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:128: error: too many arguments to function ‘Dwarf_P_Debug_s* dwarf_producer_init(Dwarf_Unsigned, Dwarf_Callback_Func, Dwarf_Handler, Dwarf_Ptr, Dwarf_Error_s**)’
+In file included from /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:2:0:
+/usr/include/libdwarf.h:2246:15: note: declared here
+ Dwarf_P_Debug dwarf_producer_init(
+               ^
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3456627187.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec3456627187/fast] Error 2
+
+Source file was:
+
+      #include <libdwarf.h>
+      #include <cstddef>
+      int dwarfCallback(const char * a, int b, Dwarf_Unsigned c,
+        Dwarf_Unsigned d, Dwarf_Unsigned e, Dwarf_Unsigned f,
+        Dwarf_Unsigned * g, Dwarf_Ptr h, int * i) {}
+      int main() { dwarf_producer_init(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr); return 0; }
+Performing C++ SOURCE FILE Test DW_CONST failed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec87035086/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec87035086.dir/build.make CMakeFiles/cmTryCompileExec87035086.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec87035086.dir/src.cxx.o
+/usr/bin/c++    -DDW_CONST -std=c++0x   -o CMakeFiles/cmTryCompileExec87035086.dir/src.cxx.o -c /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:94: error: invalid conversion from ‘int (*)(const char*, int, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned*, Dwarf_Ptr, int*) {aka int (*)(const char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ to ‘Dwarf_Callback_Func_c {aka int (*)(char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ [-fpermissive]
+       int main() { dwarf_producer_init_c(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr); return 0; }
+                                                                                              ^
+In file included from /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:2:0:
+/usr/include/libdwarf.h:2207:15: error:   initializing argument 2 of ‘Dwarf_P_Debug_s* dwarf_producer_init_c(Dwarf_Unsigned, Dwarf_Callback_Func_c, Dwarf_Handler, Dwarf_Ptr, void*, Dwarf_Error_s**)’ [-fpermissive]
+ Dwarf_P_Debug dwarf_producer_init_c(
+               ^
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec87035086.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec87035086/fast] Error 2
+
+Source file was:
+
+      #include <libdwarf.h>
+      #include <cstddef>
+      int dwarfCallback(const char * a, int b, Dwarf_Unsigned c,
+        Dwarf_Unsigned d, Dwarf_Unsigned e, Dwarf_Unsigned f,
+        Dwarf_Unsigned * g, Dwarf_Ptr h, int * i) {}
+      int main() { dwarf_producer_init_c(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr); return 0; }
+Performing C++ SOURCE FILE Test DW_CONST failed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2459354185/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2459354185.dir/build.make CMakeFiles/cmTryCompileExec2459354185.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2459354185.dir/src.cxx.o
+/usr/bin/c++    -DDW_CONST -std=c++0x   -o CMakeFiles/cmTryCompileExec2459354185.dir/src.cxx.o -c /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:128: error: invalid conversion from ‘int (*)(const char*, int, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned*, Dwarf_Ptr, int*) {aka int (*)(const char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ to ‘Dwarf_Callback_Func {aka int (*)(char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, int*, int*)}’ [-fpermissive]
+       int main() { dwarf_producer_init(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr); return 0; }
+                                                                                                                                ^
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:128: error: too many arguments to function ‘Dwarf_P_Debug_s* dwarf_producer_init(Dwarf_Unsigned, Dwarf_Callback_Func, Dwarf_Handler, Dwarf_Ptr, Dwarf_Error_s**)’
+In file included from /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:2:0:
+/usr/include/libdwarf.h:2246:15: note: declared here
+ Dwarf_P_Debug dwarf_producer_init(
+               ^
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2459354185.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec2459354185/fast] Error 2
+
+Source file was:
+
+      #include <libdwarf.h>
+      #include <cstddef>
+      int dwarfCallback(const char * a, int b, Dwarf_Unsigned c,
+        Dwarf_Unsigned d, Dwarf_Unsigned e, Dwarf_Unsigned f,
+        Dwarf_Unsigned * g, Dwarf_Ptr h, int * i) {}
+      int main() { dwarf_producer_init(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr); return 0; }
+Performing C++ SOURCE FILE Test DW_CONST failed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3054716547/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3054716547.dir/build.make CMakeFiles/cmTryCompileExec3054716547.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3054716547.dir/src.cxx.o
+/usr/bin/c++    -DDW_CONST -std=c++0x   -o CMakeFiles/cmTryCompileExec3054716547.dir/src.cxx.o -c /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:94: error: invalid conversion from ‘int (*)(const char*, int, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned*, Dwarf_Ptr, int*) {aka int (*)(const char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ to ‘Dwarf_Callback_Func_c {aka int (*)(char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ [-fpermissive]
+       int main() { dwarf_producer_init_c(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr); return 0; }
+                                                                                              ^
+In file included from /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:2:0:
+/usr/include/libdwarf.h:2207:15: error:   initializing argument 2 of ‘Dwarf_P_Debug_s* dwarf_producer_init_c(Dwarf_Unsigned, Dwarf_Callback_Func_c, Dwarf_Handler, Dwarf_Ptr, void*, Dwarf_Error_s**)’ [-fpermissive]
+ Dwarf_P_Debug dwarf_producer_init_c(
+               ^
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3054716547.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec3054716547/fast] Error 2
+
+Source file was:
+
+      #include <libdwarf.h>
+      #include <cstddef>
+      int dwarfCallback(const char * a, int b, Dwarf_Unsigned c,
+        Dwarf_Unsigned d, Dwarf_Unsigned e, Dwarf_Unsigned f,
+        Dwarf_Unsigned * g, Dwarf_Ptr h, int * i) {}
+      int main() { dwarf_producer_init_c(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr); return 0; }
+Performing C++ SOURCE FILE Test DW_CONST failed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3221290981/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3221290981.dir/build.make CMakeFiles/cmTryCompileExec3221290981.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3221290981.dir/src.cxx.o
+/usr/bin/c++    -DDW_CONST -std=c++0x   -o CMakeFiles/cmTryCompileExec3221290981.dir/src.cxx.o -c /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:128: error: invalid conversion from ‘int (*)(const char*, int, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned*, Dwarf_Ptr, int*) {aka int (*)(const char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ to ‘Dwarf_Callback_Func {aka int (*)(char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, int*, int*)}’ [-fpermissive]
+       int main() { dwarf_producer_init(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr); return 0; }
+                                                                                                                                ^
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:128: error: too many arguments to function ‘Dwarf_P_Debug_s* dwarf_producer_init(Dwarf_Unsigned, Dwarf_Callback_Func, Dwarf_Handler, Dwarf_Ptr, Dwarf_Error_s**)’
+In file included from /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:2:0:
+/usr/include/libdwarf.h:2246:15: note: declared here
+ Dwarf_P_Debug dwarf_producer_init(
+               ^
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3221290981.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec3221290981/fast] Error 2
+
+Source file was:
+
+      #include <libdwarf.h>
+      #include <cstddef>
+      int dwarfCallback(const char * a, int b, Dwarf_Unsigned c,
+        Dwarf_Unsigned d, Dwarf_Unsigned e, Dwarf_Unsigned f,
+        Dwarf_Unsigned * g, Dwarf_Ptr h, int * i) {}
+      int main() { dwarf_producer_init(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr); return 0; }
+Performing C++ SOURCE FILE Test DW_CONST failed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1814901199/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1814901199.dir/build.make CMakeFiles/cmTryCompileExec1814901199.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1814901199.dir/src.cxx.o
+/usr/bin/c++    -DDW_CONST -std=c++0x   -o CMakeFiles/cmTryCompileExec1814901199.dir/src.cxx.o -c /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:94: error: invalid conversion from ‘int (*)(const char*, int, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned*, Dwarf_Ptr, int*) {aka int (*)(const char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ to ‘Dwarf_Callback_Func_c {aka int (*)(char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ [-fpermissive]
+       int main() { dwarf_producer_init_c(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr); return 0; }
+                                                                                              ^
+In file included from /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:2:0:
+/usr/include/libdwarf.h:2207:15: error:   initializing argument 2 of ‘Dwarf_P_Debug_s* dwarf_producer_init_c(Dwarf_Unsigned, Dwarf_Callback_Func_c, Dwarf_Handler, Dwarf_Ptr, void*, Dwarf_Error_s**)’ [-fpermissive]
+ Dwarf_P_Debug dwarf_producer_init_c(
+               ^
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec1814901199.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec1814901199/fast] Error 2
+
+Source file was:
+
+      #include <libdwarf.h>
+      #include <cstddef>
+      int dwarfCallback(const char * a, int b, Dwarf_Unsigned c,
+        Dwarf_Unsigned d, Dwarf_Unsigned e, Dwarf_Unsigned f,
+        Dwarf_Unsigned * g, Dwarf_Ptr h, int * i) {}
+      int main() { dwarf_producer_init_c(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr); return 0; }
+Performing C++ SOURCE FILE Test DW_CONST failed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3844511964/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3844511964.dir/build.make CMakeFiles/cmTryCompileExec3844511964.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3844511964.dir/src.cxx.o
+/usr/bin/c++    -DDW_CONST -std=c++0x   -o CMakeFiles/cmTryCompileExec3844511964.dir/src.cxx.o -c /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:128: error: invalid conversion from ‘int (*)(const char*, int, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned*, Dwarf_Ptr, int*) {aka int (*)(const char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ to ‘Dwarf_Callback_Func {aka int (*)(char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, int*, int*)}’ [-fpermissive]
+       int main() { dwarf_producer_init(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr); return 0; }
+                                                                                                                                ^
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:128: error: too many arguments to function ‘Dwarf_P_Debug_s* dwarf_producer_init(Dwarf_Unsigned, Dwarf_Callback_Func, Dwarf_Handler, Dwarf_Ptr, Dwarf_Error_s**)’
+In file included from /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:2:0:
+/usr/include/libdwarf.h:2246:15: note: declared here
+ Dwarf_P_Debug dwarf_producer_init(
+               ^
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3844511964.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec3844511964/fast] Error 2
+
+Source file was:
+
+      #include <libdwarf.h>
+      #include <cstddef>
+      int dwarfCallback(const char * a, int b, Dwarf_Unsigned c,
+        Dwarf_Unsigned d, Dwarf_Unsigned e, Dwarf_Unsigned f,
+        Dwarf_Unsigned * g, Dwarf_Ptr h, int * i) {}
+      int main() { dwarf_producer_init(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr); return 0; }
+Performing C++ SOURCE FILE Test DW_CONST failed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3880646706/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3880646706.dir/build.make CMakeFiles/cmTryCompileExec3880646706.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3880646706.dir/src.cxx.o
+/usr/bin/c++    -DDW_CONST -std=c++0x   -o CMakeFiles/cmTryCompileExec3880646706.dir/src.cxx.o -c /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:94: error: invalid conversion from ‘int (*)(const char*, int, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned*, Dwarf_Ptr, int*) {aka int (*)(const char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ to ‘Dwarf_Callback_Func_c {aka int (*)(char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ [-fpermissive]
+       int main() { dwarf_producer_init_c(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr); return 0; }
+                                                                                              ^
+In file included from /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:2:0:
+/usr/include/libdwarf.h:2207:15: error:   initializing argument 2 of ‘Dwarf_P_Debug_s* dwarf_producer_init_c(Dwarf_Unsigned, Dwarf_Callback_Func_c, Dwarf_Handler, Dwarf_Ptr, void*, Dwarf_Error_s**)’ [-fpermissive]
+ Dwarf_P_Debug dwarf_producer_init_c(
+               ^
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3880646706.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec3880646706/fast] Error 2
+
+Source file was:
+
+      #include <libdwarf.h>
+      #include <cstddef>
+      int dwarfCallback(const char * a, int b, Dwarf_Unsigned c,
+        Dwarf_Unsigned d, Dwarf_Unsigned e, Dwarf_Unsigned f,
+        Dwarf_Unsigned * g, Dwarf_Ptr h, int * i) {}
+      int main() { dwarf_producer_init_c(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr); return 0; }
+Performing C++ SOURCE FILE Test DW_CONST failed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec982281087/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec982281087.dir/build.make CMakeFiles/cmTryCompileExec982281087.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec982281087.dir/src.cxx.o
+/usr/bin/c++    -DDW_CONST -std=c++0x   -o CMakeFiles/cmTryCompileExec982281087.dir/src.cxx.o -c /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:128: error: invalid conversion from ‘int (*)(const char*, int, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned*, Dwarf_Ptr, int*) {aka int (*)(const char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ to ‘Dwarf_Callback_Func {aka int (*)(char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, int*, int*)}’ [-fpermissive]
+       int main() { dwarf_producer_init(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr); return 0; }
+                                                                                                                                ^
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:128: error: too many arguments to function ‘Dwarf_P_Debug_s* dwarf_producer_init(Dwarf_Unsigned, Dwarf_Callback_Func, Dwarf_Handler, Dwarf_Ptr, Dwarf_Error_s**)’
+In file included from /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:2:0:
+/usr/include/libdwarf.h:2246:15: note: declared here
+ Dwarf_P_Debug dwarf_producer_init(
+               ^
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec982281087.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec982281087/fast] Error 2
+
+Source file was:
+
+      #include <libdwarf.h>
+      #include <cstddef>
+      int dwarfCallback(const char * a, int b, Dwarf_Unsigned c,
+        Dwarf_Unsigned d, Dwarf_Unsigned e, Dwarf_Unsigned f,
+        Dwarf_Unsigned * g, Dwarf_Ptr h, int * i) {}
+      int main() { dwarf_producer_init(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr); return 0; }
+Performing C++ SOURCE FILE Test DW_CONST failed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3310163303/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3310163303.dir/build.make CMakeFiles/cmTryCompileExec3310163303.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3310163303.dir/src.cxx.o
+/usr/bin/c++    -DDW_CONST -std=c++0x   -o CMakeFiles/cmTryCompileExec3310163303.dir/src.cxx.o -c /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:94: error: invalid conversion from ‘int (*)(const char*, int, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned*, Dwarf_Ptr, int*) {aka int (*)(const char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ to ‘Dwarf_Callback_Func_c {aka int (*)(char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ [-fpermissive]
+       int main() { dwarf_producer_init_c(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr); return 0; }
+                                                                                              ^
+In file included from /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:2:0:
+/usr/include/libdwarf.h:2207:15: error:   initializing argument 2 of ‘Dwarf_P_Debug_s* dwarf_producer_init_c(Dwarf_Unsigned, Dwarf_Callback_Func_c, Dwarf_Handler, Dwarf_Ptr, void*, Dwarf_Error_s**)’ [-fpermissive]
+ Dwarf_P_Debug dwarf_producer_init_c(
+               ^
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3310163303.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec3310163303/fast] Error 2
+
+Source file was:
+
+      #include <libdwarf.h>
+      #include <cstddef>
+      int dwarfCallback(const char * a, int b, Dwarf_Unsigned c,
+        Dwarf_Unsigned d, Dwarf_Unsigned e, Dwarf_Unsigned f,
+        Dwarf_Unsigned * g, Dwarf_Ptr h, int * i) {}
+      int main() { dwarf_producer_init_c(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr); return 0; }
+Performing C++ SOURCE FILE Test DW_CONST failed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2789208481/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2789208481.dir/build.make CMakeFiles/cmTryCompileExec2789208481.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2789208481.dir/src.cxx.o
+/usr/bin/c++    -DDW_CONST -std=c++0x   -o CMakeFiles/cmTryCompileExec2789208481.dir/src.cxx.o -c /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:128: error: invalid conversion from ‘int (*)(const char*, int, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned*, Dwarf_Ptr, int*) {aka int (*)(const char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ to ‘Dwarf_Callback_Func {aka int (*)(char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, int*, int*)}’ [-fpermissive]
+       int main() { dwarf_producer_init(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr); return 0; }
+                                                                                                                                ^
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:128: error: too many arguments to function ‘Dwarf_P_Debug_s* dwarf_producer_init(Dwarf_Unsigned, Dwarf_Callback_Func, Dwarf_Handler, Dwarf_Ptr, Dwarf_Error_s**)’
+In file included from /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:2:0:
+/usr/include/libdwarf.h:2246:15: note: declared here
+ Dwarf_P_Debug dwarf_producer_init(
+               ^
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2789208481.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec2789208481/fast] Error 2
+
+Source file was:
+
+      #include <libdwarf.h>
+      #include <cstddef>
+      int dwarfCallback(const char * a, int b, Dwarf_Unsigned c,
+        Dwarf_Unsigned d, Dwarf_Unsigned e, Dwarf_Unsigned f,
+        Dwarf_Unsigned * g, Dwarf_Ptr h, int * i) {}
+      int main() { dwarf_producer_init(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr); return 0; }
+Performing C++ SOURCE FILE Test DW_CONST failed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3619881834/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3619881834.dir/build.make CMakeFiles/cmTryCompileExec3619881834.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3619881834.dir/src.cxx.o
+/usr/bin/c++    -DDW_CONST -std=c++0x   -o CMakeFiles/cmTryCompileExec3619881834.dir/src.cxx.o -c /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:94: error: invalid conversion from ‘int (*)(const char*, int, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned*, Dwarf_Ptr, int*) {aka int (*)(const char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ to ‘Dwarf_Callback_Func_c {aka int (*)(char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ [-fpermissive]
+       int main() { dwarf_producer_init_c(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr); return 0; }
+                                                                                              ^
+In file included from /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:2:0:
+/usr/include/libdwarf.h:2207:15: error:   initializing argument 2 of ‘Dwarf_P_Debug_s* dwarf_producer_init_c(Dwarf_Unsigned, Dwarf_Callback_Func_c, Dwarf_Handler, Dwarf_Ptr, void*, Dwarf_Error_s**)’ [-fpermissive]
+ Dwarf_P_Debug dwarf_producer_init_c(
+               ^
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3619881834.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec3619881834/fast] Error 2
+
+Source file was:
+
+      #include <libdwarf.h>
+      #include <cstddef>
+      int dwarfCallback(const char * a, int b, Dwarf_Unsigned c,
+        Dwarf_Unsigned d, Dwarf_Unsigned e, Dwarf_Unsigned f,
+        Dwarf_Unsigned * g, Dwarf_Ptr h, int * i) {}
+      int main() { dwarf_producer_init_c(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr); return 0; }
+Performing C++ SOURCE FILE Test DW_CONST failed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec883978278/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec883978278.dir/build.make CMakeFiles/cmTryCompileExec883978278.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec883978278.dir/src.cxx.o
+/usr/bin/c++    -DDW_CONST -std=c++0x   -o CMakeFiles/cmTryCompileExec883978278.dir/src.cxx.o -c /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:128: error: invalid conversion from ‘int (*)(const char*, int, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned*, Dwarf_Ptr, int*) {aka int (*)(const char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ to ‘Dwarf_Callback_Func {aka int (*)(char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, int*, int*)}’ [-fpermissive]
+       int main() { dwarf_producer_init(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr); return 0; }
+                                                                                                                                ^
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:128: error: too many arguments to function ‘Dwarf_P_Debug_s* dwarf_producer_init(Dwarf_Unsigned, Dwarf_Callback_Func, Dwarf_Handler, Dwarf_Ptr, Dwarf_Error_s**)’
+In file included from /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:2:0:
+/usr/include/libdwarf.h:2246:15: note: declared here
+ Dwarf_P_Debug dwarf_producer_init(
+               ^
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec883978278.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec883978278/fast] Error 2
+
+Source file was:
+
+      #include <libdwarf.h>
+      #include <cstddef>
+      int dwarfCallback(const char * a, int b, Dwarf_Unsigned c,
+        Dwarf_Unsigned d, Dwarf_Unsigned e, Dwarf_Unsigned f,
+        Dwarf_Unsigned * g, Dwarf_Ptr h, int * i) {}
+      int main() { dwarf_producer_init(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr); return 0; }
+Performing C++ SOURCE FILE Test DW_CONST failed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1655146992/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1655146992.dir/build.make CMakeFiles/cmTryCompileExec1655146992.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1655146992.dir/src.cxx.o
+/usr/bin/c++    -DDW_CONST -std=c++0x   -o CMakeFiles/cmTryCompileExec1655146992.dir/src.cxx.o -c /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:94: error: invalid conversion from ‘int (*)(const char*, int, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned*, Dwarf_Ptr, int*) {aka int (*)(const char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ to ‘Dwarf_Callback_Func_c {aka int (*)(char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ [-fpermissive]
+       int main() { dwarf_producer_init_c(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr); return 0; }
+                                                                                              ^
+In file included from /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:2:0:
+/usr/include/libdwarf.h:2207:15: error:   initializing argument 2 of ‘Dwarf_P_Debug_s* dwarf_producer_init_c(Dwarf_Unsigned, Dwarf_Callback_Func_c, Dwarf_Handler, Dwarf_Ptr, void*, Dwarf_Error_s**)’ [-fpermissive]
+ Dwarf_P_Debug dwarf_producer_init_c(
+               ^
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec1655146992.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec1655146992/fast] Error 2
+
+Source file was:
+
+      #include <libdwarf.h>
+      #include <cstddef>
+      int dwarfCallback(const char * a, int b, Dwarf_Unsigned c,
+        Dwarf_Unsigned d, Dwarf_Unsigned e, Dwarf_Unsigned f,
+        Dwarf_Unsigned * g, Dwarf_Ptr h, int * i) {}
+      int main() { dwarf_producer_init_c(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr); return 0; }
+Performing C++ SOURCE FILE Test DW_CONST failed with the following output:
+Change Dir: /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec134472498/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec134472498.dir/build.make CMakeFiles/cmTryCompileExec134472498.dir/build
+make[1]: Entering directory `/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec134472498.dir/src.cxx.o
+/usr/bin/c++    -DDW_CONST -std=c++0x   -o CMakeFiles/cmTryCompileExec134472498.dir/src.cxx.o -c /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx
+/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:128: error: invalid conversion from ‘int (*)(const char*, int, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned*, Dwarf_Ptr, int*) {aka int (*)(const char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ to ‘Dwarf_Callback_Func {aka int (*)(char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, int*, int*)}’ [-fpermissive]
+       int main() { dwarf_producer_init(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr); return 0; }
+                                                                                                                                ^
+/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:128: error: too many arguments to function ‘Dwarf_P_Debug_s* dwarf_producer_init(Dwarf_Unsigned, Dwarf_Callback_Func, Dwarf_Handler, Dwarf_Ptr, Dwarf_Error_s**)’
+In file included from /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:2:0:
+/usr/include/libdwarf.h:2246:15: note: declared here
+ Dwarf_P_Debug dwarf_producer_init(
+               ^
+make[1]: Leaving directory `/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec134472498.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec134472498/fast] Error 2
+
+Source file was:
+
+      #include <libdwarf.h>
+      #include <cstddef>
+      int dwarfCallback(const char * a, int b, Dwarf_Unsigned c,
+        Dwarf_Unsigned d, Dwarf_Unsigned e, Dwarf_Unsigned f,
+        Dwarf_Unsigned * g, Dwarf_Ptr h, int * i) {}
+      int main() { dwarf_producer_init(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr); return 0; }
+Performing C++ SOURCE FILE Test DW_CONST failed with the following output:
+Change Dir: /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1498995510/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1498995510.dir/build.make CMakeFiles/cmTryCompileExec1498995510.dir/build
+make[1]: Entering directory `/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1498995510.dir/src.cxx.o
+/usr/bin/c++    -DDW_CONST -std=c++0x   -o CMakeFiles/cmTryCompileExec1498995510.dir/src.cxx.o -c /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx
+/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:94: error: invalid conversion from ‘int (*)(const char*, int, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned*, Dwarf_Ptr, int*) {aka int (*)(const char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ to ‘Dwarf_Callback_Func_c {aka int (*)(char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ [-fpermissive]
+       int main() { dwarf_producer_init_c(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr); return 0; }
+                                                                                              ^
+In file included from /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:2:0:
+/usr/include/libdwarf.h:2207:15: error:   initializing argument 2 of ‘Dwarf_P_Debug_s* dwarf_producer_init_c(Dwarf_Unsigned, Dwarf_Callback_Func_c, Dwarf_Handler, Dwarf_Ptr, void*, Dwarf_Error_s**)’ [-fpermissive]
+ Dwarf_P_Debug dwarf_producer_init_c(
+               ^
+make[1]: Leaving directory `/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec1498995510.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec1498995510/fast] Error 2
+
+Source file was:
+
+      #include <libdwarf.h>
+      #include <cstddef>
+      int dwarfCallback(const char * a, int b, Dwarf_Unsigned c,
+        Dwarf_Unsigned d, Dwarf_Unsigned e, Dwarf_Unsigned f,
+        Dwarf_Unsigned * g, Dwarf_Ptr h, int * i) {}
+      int main() { dwarf_producer_init_c(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr); return 0; }
+Performing C++ SOURCE FILE Test DW_CONST failed with the following output:
+Change Dir: /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3374623572/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3374623572.dir/build.make CMakeFiles/cmTryCompileExec3374623572.dir/build
+make[1]: Entering directory `/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3374623572.dir/src.cxx.o
+/usr/bin/c++    -DDW_CONST -std=c++0x   -o CMakeFiles/cmTryCompileExec3374623572.dir/src.cxx.o -c /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx
+/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:128: error: invalid conversion from ‘int (*)(const char*, int, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned*, Dwarf_Ptr, int*) {aka int (*)(const char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ to ‘Dwarf_Callback_Func {aka int (*)(char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, int*, int*)}’ [-fpermissive]
+       int main() { dwarf_producer_init(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr); return 0; }
+                                                                                                                                ^
+/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:128: error: too many arguments to function ‘Dwarf_P_Debug_s* dwarf_producer_init(Dwarf_Unsigned, Dwarf_Callback_Func, Dwarf_Handler, Dwarf_Ptr, Dwarf_Error_s**)’
+In file included from /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:2:0:
+/usr/include/libdwarf.h:2246:15: note: declared here
+ Dwarf_P_Debug dwarf_producer_init(
+               ^
+make[1]: Leaving directory `/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3374623572.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec3374623572/fast] Error 2
+
+Source file was:
+
+      #include <libdwarf.h>
+      #include <cstddef>
+      int dwarfCallback(const char * a, int b, Dwarf_Unsigned c,
+        Dwarf_Unsigned d, Dwarf_Unsigned e, Dwarf_Unsigned f,
+        Dwarf_Unsigned * g, Dwarf_Ptr h, int * i) {}
+      int main() { dwarf_producer_init(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr); return 0; }
+Performing C++ SOURCE FILE Test DW_CONST failed with the following output:
+Change Dir: /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2310628311/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2310628311.dir/build.make CMakeFiles/cmTryCompileExec2310628311.dir/build
+make[1]: Entering directory `/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2310628311.dir/src.cxx.o
+/usr/bin/c++    -DDW_CONST -std=c++0x   -o CMakeFiles/cmTryCompileExec2310628311.dir/src.cxx.o -c /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx
+/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:94: error: invalid conversion from ‘int (*)(const char*, int, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned*, Dwarf_Ptr, int*) {aka int (*)(const char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ to ‘Dwarf_Callback_Func_c {aka int (*)(char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ [-fpermissive]
+       int main() { dwarf_producer_init_c(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr); return 0; }
+                                                                                              ^
+In file included from /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:2:0:
+/usr/include/libdwarf.h:2207:15: error:   initializing argument 2 of ‘Dwarf_P_Debug_s* dwarf_producer_init_c(Dwarf_Unsigned, Dwarf_Callback_Func_c, Dwarf_Handler, Dwarf_Ptr, void*, Dwarf_Error_s**)’ [-fpermissive]
+ Dwarf_P_Debug dwarf_producer_init_c(
+               ^
+make[1]: Leaving directory `/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2310628311.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec2310628311/fast] Error 2
+
+Source file was:
+
+      #include <libdwarf.h>
+      #include <cstddef>
+      int dwarfCallback(const char * a, int b, Dwarf_Unsigned c,
+        Dwarf_Unsigned d, Dwarf_Unsigned e, Dwarf_Unsigned f,
+        Dwarf_Unsigned * g, Dwarf_Ptr h, int * i) {}
+      int main() { dwarf_producer_init_c(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr); return 0; }
+Performing C++ SOURCE FILE Test DW_CONST failed with the following output:
+Change Dir: /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2804403531/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2804403531.dir/build.make CMakeFiles/cmTryCompileExec2804403531.dir/build
+make[1]: Entering directory `/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2804403531.dir/src.cxx.o
+/usr/bin/c++    -DDW_CONST -std=c++0x   -o CMakeFiles/cmTryCompileExec2804403531.dir/src.cxx.o -c /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx
+/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:128: error: invalid conversion from ‘int (*)(const char*, int, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned*, Dwarf_Ptr, int*) {aka int (*)(const char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ to ‘Dwarf_Callback_Func {aka int (*)(char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, int*, int*)}’ [-fpermissive]
+       int main() { dwarf_producer_init(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr); return 0; }
+                                                                                                                                ^
+/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:128: error: too many arguments to function ‘Dwarf_P_Debug_s* dwarf_producer_init(Dwarf_Unsigned, Dwarf_Callback_Func, Dwarf_Handler, Dwarf_Ptr, Dwarf_Error_s**)’
+In file included from /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:2:0:
+/usr/include/libdwarf.h:2246:15: note: declared here
+ Dwarf_P_Debug dwarf_producer_init(
+               ^
+make[1]: Leaving directory `/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2804403531.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec2804403531/fast] Error 2
+
+Source file was:
+
+      #include <libdwarf.h>
+      #include <cstddef>
+      int dwarfCallback(const char * a, int b, Dwarf_Unsigned c,
+        Dwarf_Unsigned d, Dwarf_Unsigned e, Dwarf_Unsigned f,
+        Dwarf_Unsigned * g, Dwarf_Ptr h, int * i) {}
+      int main() { dwarf_producer_init(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr); return 0; }
+Performing C++ SOURCE FILE Test DW_CONST failed with the following output:
+Change Dir: /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3943795400/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3943795400.dir/build.make CMakeFiles/cmTryCompileExec3943795400.dir/build
+make[1]: Entering directory `/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3943795400.dir/src.cxx.o
+/usr/bin/c++    -DDW_CONST -std=c++0x   -o CMakeFiles/cmTryCompileExec3943795400.dir/src.cxx.o -c /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx
+/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:7:94: error: invalid conversion from ‘int (*)(const char*, int, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned, Dwarf_Unsigned*, Dwarf_Ptr, int*) {aka int (*)(const char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ to ‘Dwarf_Callback_Func_c {aka int (*)(char*, int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int, long long unsigned int*, void*, int*)}’ [-fpermissive]
+       int main() { dwarf_producer_init_c(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr); return 0; }
+                                                                                              ^
+In file included from /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx:2:0:
+/usr/include/libdwarf.h:2207:15: error:   initializing argument 2 of ‘Dwarf_P_Debug_s* dwarf_producer_init_c(Dwarf_Unsigned, Dwarf_Callback_Func_c, Dwarf_Handler, Dwarf_Ptr, void*, Dwarf_Error_s**)’ [-fpermissive]
+ Dwarf_P_Debug dwarf_producer_init_c(
+               ^
+make[1]: Leaving directory `/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3943795400.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec3943795400/fast] Error 2
+
+Source file was:
+
+      #include <libdwarf.h>
+      #include <cstddef>
+      int dwarfCallback(const char * a, int b, Dwarf_Unsigned c,
+        Dwarf_Unsigned d, Dwarf_Unsigned e, Dwarf_Unsigned f,
+        Dwarf_Unsigned * g, Dwarf_Ptr h, int * i) {}
+      int main() { dwarf_producer_init_c(0, dwarfCallback, nullptr, nullptr, nullptr, nullptr); return 0; }

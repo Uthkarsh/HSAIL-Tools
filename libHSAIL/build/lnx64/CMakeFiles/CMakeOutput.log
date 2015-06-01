@@ -1,0 +1,670 @@
+The system is: Linux - 3.13.0-32-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/2.8.12.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/2.8.12.2/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec621257064/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec621257064.dir/build.make CMakeFiles/cmTryCompileExec621257064.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec621257064.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec621257064.dir/testCCompiler.c.o   -c /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec621257064
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec621257064.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec621257064.dir/testCCompiler.c.o  -o cmTryCompileExec621257064 -rdynamic 
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1457540759/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1457540759.dir/build.make CMakeFiles/cmTryCompileExec1457540759.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1457540759.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1457540759.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec1457540759
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1457540759.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTryCompileExec1457540759.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec1457540759 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.2-19ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1457540759' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec1457540759 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec1457540759.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec1457540759/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec1457540759.dir/build.make CMakeFiles/cmTryCompileExec1457540759.dir/build]
+  ignore line: [make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec1457540759.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1457540759.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec1457540759]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1457540759.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTryCompileExec1457540759.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec1457540759 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.2-19ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1457540759' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec1457540759 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec1457540759.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec1457540759] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
+    arg [CMakeFiles/cmTryCompileExec1457540759.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> [/usr/lib/gcc/x86_64-linux-gnu/4.8]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> [/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/4.8;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1913843168/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1913843168.dir/build.make CMakeFiles/cmTryCompileExec1913843168.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1913843168.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec1913843168.dir/testCXXCompiler.cxx.o -c /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec1913843168
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1913843168.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec1913843168.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec1913843168 -rdynamic 
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3351063006/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3351063006.dir/build.make CMakeFiles/cmTryCompileExec3351063006.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3351063006.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3351063006.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec3351063006
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3351063006.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTryCompileExec3351063006.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3351063006 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.2-19ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3351063006' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec3351063006 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec3351063006.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec3351063006/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3351063006.dir/build.make CMakeFiles/cmTryCompileExec3351063006.dir/build]
+  ignore line: [make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec3351063006.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3351063006.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec3351063006]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3351063006.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTryCompileExec3351063006.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3351063006 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.2-19ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3351063006' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec3351063006 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec3351063006.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec3351063006] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
+    arg [CMakeFiles/cmTryCompileExec3351063006.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> [/usr/lib/gcc/x86_64-linux-gnu/4.8]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/4.8;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeded with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2866256422/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2866256422.dir/build.make CMakeFiles/cmTryCompileExec2866256422.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2866256422.dir/src.cxx.o
+/usr/bin/c++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTryCompileExec2866256422.dir/src.cxx.o -c /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec2866256422
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2866256422.dir/link.txt --verbose=1
+/usr/bin/c++    -DELF_GETSHDRSTRNDX    CMakeFiles/cmTryCompileExec2866256422.dir/src.cxx.o  -o cmTryCompileExec2866256422 -rdynamic -lelf 
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Determining if the function dwarf_producer_init exists passed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2402646180/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2402646180.dir/build.make CMakeFiles/cmTryCompileExec2402646180.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2402646180.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init   -o CMakeFiles/cmTryCompileExec2402646180.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2402646180
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2402646180.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init    CMakeFiles/cmTryCompileExec2402646180.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2402646180 -rdynamic -Wl,-Bstatic -ldwarf -Wl,-Bdynamic /usr/local/lib/libelf.so -Wl,-rpath,/usr/local/lib 
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+
+
+Determining if the function dwarf_producer_init_c exists passed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1115468205/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1115468205.dir/build.make CMakeFiles/cmTryCompileExec1115468205.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1115468205.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init_c -std=c++0x   -o CMakeFiles/cmTryCompileExec1115468205.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C [enabled by default]
+Linking C executable cmTryCompileExec1115468205
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1115468205.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init_c -std=c++0x    CMakeFiles/cmTryCompileExec1115468205.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1115468205 -rdynamic -Wl,-Bstatic -ldwarf -Wl,-Bdynamic /usr/local/lib/libelf.so -Wl,-rpath,/usr/local/lib 
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+
+
+Determining if the function dwarf_producer_init exists passed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3402682804/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3402682804.dir/build.make CMakeFiles/cmTryCompileExec3402682804.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3402682804.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init   -o CMakeFiles/cmTryCompileExec3402682804.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3402682804
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3402682804.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init    CMakeFiles/cmTryCompileExec3402682804.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3402682804 -rdynamic -Wl,-Bstatic -ldwarf -Wl,-Bdynamic /usr/local/lib/libelf.so -Wl,-rpath,/usr/local/lib 
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+
+
+Determining if the function dwarf_producer_init_c exists passed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4275459783/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4275459783.dir/build.make CMakeFiles/cmTryCompileExec4275459783.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4275459783.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init_c -std=c++0x   -o CMakeFiles/cmTryCompileExec4275459783.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C [enabled by default]
+Linking C executable cmTryCompileExec4275459783
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4275459783.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init_c -std=c++0x    CMakeFiles/cmTryCompileExec4275459783.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4275459783 -rdynamic -Wl,-Bstatic -ldwarf -Wl,-Bdynamic /usr/local/lib/libelf.so -Wl,-rpath,/usr/local/lib 
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+
+
+Determining if the function dwarf_producer_init exists passed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2865959981/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2865959981.dir/build.make CMakeFiles/cmTryCompileExec2865959981.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2865959981.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init   -o CMakeFiles/cmTryCompileExec2865959981.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2865959981
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2865959981.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init    CMakeFiles/cmTryCompileExec2865959981.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2865959981 -rdynamic -Wl,-Bstatic -ldwarf -Wl,-Bdynamic /usr/local/lib/libelf.so -Wl,-rpath,/usr/local/lib 
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+
+
+Determining if the function dwarf_producer_init_c exists passed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3723608327/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3723608327.dir/build.make CMakeFiles/cmTryCompileExec3723608327.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3723608327.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init_c -std=c++0x   -o CMakeFiles/cmTryCompileExec3723608327.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C [enabled by default]
+Linking C executable cmTryCompileExec3723608327
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3723608327.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init_c -std=c++0x    CMakeFiles/cmTryCompileExec3723608327.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3723608327 -rdynamic -Wl,-Bstatic -ldwarf -Wl,-Bdynamic /usr/local/lib/libelf.so -Wl,-rpath,/usr/local/lib 
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+
+
+Determining if the function dwarf_producer_init exists passed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1928485509/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1928485509.dir/build.make CMakeFiles/cmTryCompileExec1928485509.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1928485509.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init   -o CMakeFiles/cmTryCompileExec1928485509.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1928485509
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1928485509.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init    CMakeFiles/cmTryCompileExec1928485509.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1928485509 -rdynamic -Wl,-Bstatic -ldwarf -Wl,-Bdynamic /usr/local/lib/libelf.so -Wl,-rpath,/usr/local/lib 
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+
+
+Determining if the function dwarf_producer_init_c exists passed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec724089801/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec724089801.dir/build.make CMakeFiles/cmTryCompileExec724089801.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec724089801.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init_c -std=c++0x   -o CMakeFiles/cmTryCompileExec724089801.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C [enabled by default]
+Linking C executable cmTryCompileExec724089801
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec724089801.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init_c -std=c++0x    CMakeFiles/cmTryCompileExec724089801.dir/CheckFunctionExists.c.o  -o cmTryCompileExec724089801 -rdynamic -Wl,-Bstatic -ldwarf -Wl,-Bdynamic /usr/local/lib/libelf.so -Wl,-rpath,/usr/local/lib 
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+
+
+Determining if the function dwarf_producer_init exists passed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2953255335/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2953255335.dir/build.make CMakeFiles/cmTryCompileExec2953255335.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2953255335.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init   -o CMakeFiles/cmTryCompileExec2953255335.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2953255335
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2953255335.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init    CMakeFiles/cmTryCompileExec2953255335.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2953255335 -rdynamic -Wl,-Bstatic -ldwarf -Wl,-Bdynamic /usr/local/lib/libelf.so -Wl,-rpath,/usr/local/lib 
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+
+
+Determining if the function dwarf_producer_init_c exists passed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1353497239/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1353497239.dir/build.make CMakeFiles/cmTryCompileExec1353497239.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1353497239.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init_c -std=c++0x   -o CMakeFiles/cmTryCompileExec1353497239.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C [enabled by default]
+Linking C executable cmTryCompileExec1353497239
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1353497239.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init_c -std=c++0x    CMakeFiles/cmTryCompileExec1353497239.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1353497239 -rdynamic -Wl,-Bstatic -ldwarf -Wl,-Bdynamic /usr/local/lib/libelf.so -Wl,-rpath,/usr/local/lib 
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+
+
+Determining if the function dwarf_producer_init exists passed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec334740752/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec334740752.dir/build.make CMakeFiles/cmTryCompileExec334740752.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec334740752.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init   -o CMakeFiles/cmTryCompileExec334740752.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec334740752
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec334740752.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init    CMakeFiles/cmTryCompileExec334740752.dir/CheckFunctionExists.c.o  -o cmTryCompileExec334740752 -rdynamic -Wl,-Bstatic -ldwarf -Wl,-Bdynamic /usr/local/lib/libelf.so -Wl,-rpath,/usr/local/lib 
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+
+
+Determining if the function dwarf_producer_init_c exists passed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4142430784/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4142430784.dir/build.make CMakeFiles/cmTryCompileExec4142430784.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4142430784.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init_c -std=c++0x   -o CMakeFiles/cmTryCompileExec4142430784.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C [enabled by default]
+Linking C executable cmTryCompileExec4142430784
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4142430784.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init_c -std=c++0x    CMakeFiles/cmTryCompileExec4142430784.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4142430784 -rdynamic -Wl,-Bstatic -ldwarf -Wl,-Bdynamic /usr/local/lib/libelf.so -Wl,-rpath,/usr/local/lib 
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+
+
+Determining if the function dwarf_producer_init exists passed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3639736830/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3639736830.dir/build.make CMakeFiles/cmTryCompileExec3639736830.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3639736830.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init   -o CMakeFiles/cmTryCompileExec3639736830.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3639736830
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3639736830.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init    CMakeFiles/cmTryCompileExec3639736830.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3639736830 -rdynamic -Wl,-Bstatic -ldwarf -Wl,-Bdynamic /usr/local/lib/libelf.so -Wl,-rpath,/usr/local/lib 
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+
+
+Determining if the function dwarf_producer_init_c exists passed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1842137561/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1842137561.dir/build.make CMakeFiles/cmTryCompileExec1842137561.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1842137561.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init_c -std=c++0x   -o CMakeFiles/cmTryCompileExec1842137561.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C [enabled by default]
+Linking C executable cmTryCompileExec1842137561
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1842137561.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init_c -std=c++0x    CMakeFiles/cmTryCompileExec1842137561.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1842137561 -rdynamic -Wl,-Bstatic -ldwarf -Wl,-Bdynamic /usr/local/lib/libelf.so -Wl,-rpath,/usr/local/lib 
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+
+
+Determining if the function dwarf_producer_init exists passed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3726514515/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3726514515.dir/build.make CMakeFiles/cmTryCompileExec3726514515.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3726514515.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init   -o CMakeFiles/cmTryCompileExec3726514515.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3726514515
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3726514515.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init    CMakeFiles/cmTryCompileExec3726514515.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3726514515 -rdynamic -Wl,-Bstatic -ldwarf -Wl,-Bdynamic /usr/local/lib/libelf.so -Wl,-rpath,/usr/local/lib 
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+
+
+Determining if the function dwarf_producer_init_c exists passed with the following output:
+Change Dir: /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1679627834/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1679627834.dir/build.make CMakeFiles/cmTryCompileExec1679627834.dir/build
+make[1]: Entering directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1679627834.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init_c -std=c++0x   -o CMakeFiles/cmTryCompileExec1679627834.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C [enabled by default]
+Linking C executable cmTryCompileExec1679627834
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1679627834.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init_c -std=c++0x    CMakeFiles/cmTryCompileExec1679627834.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1679627834 -rdynamic -Wl,-Bstatic -ldwarf -Wl,-Bdynamic /usr/local/lib/libelf.so -Wl,-rpath,/usr/local/lib 
+make[1]: Leaving directory `/home/uthkarsh/Documents/HSA/compiler/HSAF/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+
+
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeded with the following output:
+Change Dir: /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2281732998/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2281732998.dir/build.make CMakeFiles/cmTryCompileExec2281732998.dir/build
+make[1]: Entering directory `/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2281732998.dir/src.cxx.o
+/usr/bin/c++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTryCompileExec2281732998.dir/src.cxx.o -c /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec2281732998
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2281732998.dir/link.txt --verbose=1
+/usr/bin/c++    -DELF_GETSHDRSTRNDX    CMakeFiles/cmTryCompileExec2281732998.dir/src.cxx.o  -o cmTryCompileExec2281732998 -rdynamic -lelf 
+make[1]: Leaving directory `/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Determining if the function dwarf_producer_init exists passed with the following output:
+Change Dir: /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2083453070/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2083453070.dir/build.make CMakeFiles/cmTryCompileExec2083453070.dir/build
+make[1]: Entering directory `/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2083453070.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init   -o CMakeFiles/cmTryCompileExec2083453070.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2083453070
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2083453070.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init    CMakeFiles/cmTryCompileExec2083453070.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2083453070 -rdynamic -Wl,-Bstatic -ldwarf -Wl,-Bdynamic /usr/local/lib/libelf.so -Wl,-rpath,/usr/local/lib 
+make[1]: Leaving directory `/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+
+
+Determining if the function dwarf_producer_init_c exists passed with the following output:
+Change Dir: /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1295426457/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1295426457.dir/build.make CMakeFiles/cmTryCompileExec1295426457.dir/build
+make[1]: Entering directory `/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1295426457.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init_c -std=c++0x   -o CMakeFiles/cmTryCompileExec1295426457.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C [enabled by default]
+Linking C executable cmTryCompileExec1295426457
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1295426457.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init_c -std=c++0x    CMakeFiles/cmTryCompileExec1295426457.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1295426457 -rdynamic -Wl,-Bstatic -ldwarf -Wl,-Bdynamic /usr/local/lib/libelf.so -Wl,-rpath,/usr/local/lib 
+make[1]: Leaving directory `/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+
+
+Determining if the function dwarf_producer_init exists passed with the following output:
+Change Dir: /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec762096630/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec762096630.dir/build.make CMakeFiles/cmTryCompileExec762096630.dir/build
+make[1]: Entering directory `/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec762096630.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init   -o CMakeFiles/cmTryCompileExec762096630.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec762096630
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec762096630.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init    CMakeFiles/cmTryCompileExec762096630.dir/CheckFunctionExists.c.o  -o cmTryCompileExec762096630 -rdynamic -Wl,-Bstatic -ldwarf -Wl,-Bdynamic /usr/local/lib/libelf.so -Wl,-rpath,/usr/local/lib 
+make[1]: Leaving directory `/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+
+
+Determining if the function dwarf_producer_init_c exists passed with the following output:
+Change Dir: /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4028987155/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4028987155.dir/build.make CMakeFiles/cmTryCompileExec4028987155.dir/build
+make[1]: Entering directory `/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4028987155.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init_c -std=c++0x   -o CMakeFiles/cmTryCompileExec4028987155.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C [enabled by default]
+Linking C executable cmTryCompileExec4028987155
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4028987155.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init_c -std=c++0x    CMakeFiles/cmTryCompileExec4028987155.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4028987155 -rdynamic -Wl,-Bstatic -ldwarf -Wl,-Bdynamic /usr/local/lib/libelf.so -Wl,-rpath,/usr/local/lib 
+make[1]: Leaving directory `/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+
+
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeded with the following output:
+Change Dir: /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1159522463/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1159522463.dir/build.make CMakeFiles/cmTryCompileExec1159522463.dir/build
+make[1]: Entering directory `/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1159522463.dir/src.cxx.o
+/usr/bin/c++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTryCompileExec1159522463.dir/src.cxx.o -c /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec1159522463
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1159522463.dir/link.txt --verbose=1
+/usr/bin/c++    -DELF_GETSHDRSTRNDX    CMakeFiles/cmTryCompileExec1159522463.dir/src.cxx.o  -o cmTryCompileExec1159522463 -rdynamic -lelf 
+make[1]: Leaving directory `/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Determining if the function dwarf_producer_init exists passed with the following output:
+Change Dir: /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3235091953/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3235091953.dir/build.make CMakeFiles/cmTryCompileExec3235091953.dir/build
+make[1]: Entering directory `/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3235091953.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init   -o CMakeFiles/cmTryCompileExec3235091953.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3235091953
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3235091953.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init    CMakeFiles/cmTryCompileExec3235091953.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3235091953 -rdynamic -Wl,-Bstatic -ldwarf -Wl,-Bdynamic /usr/local/lib/libelf.so -Wl,-rpath,/usr/local/lib 
+make[1]: Leaving directory `/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+
+
+Determining if the function dwarf_producer_init_c exists passed with the following output:
+Change Dir: /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec865579878/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec865579878.dir/build.make CMakeFiles/cmTryCompileExec865579878.dir/build
+make[1]: Entering directory `/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec865579878.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init_c -std=c++0x   -o CMakeFiles/cmTryCompileExec865579878.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C [enabled by default]
+Linking C executable cmTryCompileExec865579878
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec865579878.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dwarf_producer_init_c -std=c++0x    CMakeFiles/cmTryCompileExec865579878.dir/CheckFunctionExists.c.o  -o cmTryCompileExec865579878 -rdynamic -Wl,-Bstatic -ldwarf -Wl,-Bdynamic /usr/local/lib/libelf.so -Wl,-rpath,/usr/local/lib 
+make[1]: Leaving directory `/home/uthkarsh/Downloads/HSAIL-Tools/libHSAIL/build/lnx64/CMakeFiles/CMakeTmp'
+
+

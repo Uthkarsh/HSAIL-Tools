@@ -1,0 +1,414 @@
+module &_tmp_cloc26551_QuasiRandomSequence_Kernels_opt_bc:1:0:$full:$large:$default;
+extension "amd:gcn";
+extension "IMAGE";
+
+decl prog function &abort()();
+
+prog kernel &__OpenCL_QuasiRandomSequence_Vector_kernel(
+	kernarg_u64 %__global_offset_0,
+	kernarg_u64 %__global_offset_1,
+	kernarg_u64 %__global_offset_2,
+	kernarg_u64 %__printf_buffer,
+	kernarg_u64 %__vqueue_pointer,
+	kernarg_u64 %__aqlwrap_pointer,
+	kernarg_u64 %output,
+	kernarg_u64 %input,
+	kernarg_u64 %shared)
+{
+	pragma "AMD RTI", "ARGSTART:__OpenCL_QuasiRandomSequence_Vector_kernel";
+	pragma "AMD RTI", "version:3:1:104";
+	pragma "AMD RTI", "device:generic";
+	pragma "AMD RTI", "uniqueid:1024";
+	pragma "AMD RTI", "memory:private:0";
+	pragma "AMD RTI", "memory:region:0";
+	pragma "AMD RTI", "memory:local:0";
+	pragma "AMD RTI", "value:__global_offset_0:u64:1:1:0";
+	pragma "AMD RTI", "value:__global_offset_1:u64:1:1:16";
+	pragma "AMD RTI", "value:__global_offset_2:u64:1:1:32";
+	pragma "AMD RTI", "pointer:__printf_buffer:u8:1:1:48:uav:7:1:RW:0:0:0";
+	pragma "AMD RTI", "value:__vqueue_pointer:u64:1:1:64";
+	pragma "AMD RTI", "value:__aqlwrap_pointer:u64:1:1:80";
+	pragma "AMD RTI", "pointer:output:float:1:1:96:uav:7:16:RW:0:0:0";
+	pragma "AMD RTI", "pointer:input:u32:1:1:112:uav:7:16:RW:0:0:0";
+	pragma "AMD RTI", "pointer:shared:u32:1:1:128:l:7:16:RW:0:0:0";
+	pragma "AMD RTI", "function:1:0";
+	pragma "AMD RTI", "memory:64bitABI";
+	pragma "AMD RTI", "privateid:8";
+	pragma "AMD RTI", "enqueue_kernel:0";
+	pragma "AMD RTI", "kernel_index:0";
+	pragma "AMD RTI", "reflection:0:size_t";
+	pragma "AMD RTI", "reflection:1:size_t";
+	pragma "AMD RTI", "reflection:2:size_t";
+	pragma "AMD RTI", "reflection:3:size_t";
+	pragma "AMD RTI", "reflection:4:size_t";
+	pragma "AMD RTI", "reflection:5:size_t";
+	pragma "AMD RTI", "reflection:6:float4*";
+	pragma "AMD RTI", "reflection:7:uint4*";
+	pragma "AMD RTI", "reflection:8:uint4*";
+	pragma "AMD RTI", "ARGEND:__OpenCL_QuasiRandomSequence_Vector_kernel";
+
+@__OpenCL_QuasiRandomSequence_Vector_kernel_entry:
+	// BB#0:
+	workitemid_u32	$s0, 0;
+	ld_kernarg_align(8)_width(all)_u64	$d1, [%__global_offset_0];
+	ld_kernarg_align(8)_width(all)_u64	$d2, [%shared];
+	ld_kernarg_align(8)_width(all)_u64	$d0, [%output];
+	cmp_gt_b1_s32	$c0, $s0, 7;
+	cbr_b1	$c0, @BB0_3;
+	// BB#1:                                // %.lr.ph
+	ld_kernarg_align(8)_width(all)_u64	$d3, [%input];
+	workgroupid_u32	$s1, 0;
+	shl_u32	$s1, $s1, 3;
+	currentworkgroupsize_u32	$s2, 0;
+	workitemid_u32	$s3, 0;
+
+@BB0_2:
+	cvt_s64_s32	$d4, $s3;
+	shl_u64	$d4, $d4, 4;
+	add_u64	$d4, $d2, $d4;
+	cvt_u32_u64	$s4, $d4;
+	add_u32	$s5, $s1, $s3;
+	cvt_u64_u32	$d4, $s5;
+	shl_u64	$d4, $d4, 4;
+	add_u64	$d4, $d3, $d4;
+	ld_v4_global_align(16)_u32	($s5, $s6, $s7, $s8), [$d4];
+	st_v4_group_align(16)_u32	($s5, $s6, $s7, $s8), [$s4];
+	add_u32	$s3, $s3, $s2;
+	cmp_lt_b1_s32	$c0, $s3, 8;
+	cbr_b1	$c0, @BB0_2;
+
+@BB0_3:
+	// %._crit_edge
+	shl_u32	$s1, $s0, 2;
+	workitemabsid_u32	$s0, 0;
+	cvt_u64_u32	$d3, $s0;
+	add_u64	$d1, $d3, $d1;
+	or_b32	$s0, $s1, 3;
+	or_b32	$s3, $s1, 2;
+	or_b32	$s2, $s1, 1;
+	cvt_u32_u64	$s4, $d2;
+	cvt_u32_u64	$s5, $d2;
+	cvt_u32_u64	$s8, $d2;
+	cvt_u32_u64	$s9, $d2;
+	cvt_u32_u64	$s10, $d2;
+	cvt_u32_u64	$s7, $d2;
+	cvt_u32_u64	$s6, $d2;
+	cvt_u32_u64	$s11, $d2;
+	cvt_u32_u64	$s12, $d2;
+	cvt_u32_u64	$s13, $d2;
+	cvt_u32_u64	$s15, $d2;
+	cvt_u32_u64	$s14, $d2;
+	barrier;
+	bitextract_u32	$s17, $s2, 1, 1;
+	ld_group_align(4)_width(WAVESIZE)_u32	$s14, [$s14];
+	and_b32	$s18, $s1, 1;
+	ld_group_align(4)_width(WAVESIZE)_u32	$s15, [$s15+4];
+	bitextract_u32	$s16, $s1, 1, 1;
+	mul_u32	$s16, $s16, $s15;
+	mul_u32	$s18, $s18, $s14;
+	mul_u32	$s17, $s17, $s15;
+	and_b32	$s19, $s2, 1;
+	mul_u32	$s19, $s19, $s14;
+	bitextract_u32	$s20, $s1, 2, 1;
+	ld_group_align(4)_width(WAVESIZE)_u32	$s13, [$s13+8];
+	bitextract_u32	$s21, $s2, 2, 1;
+	xor_b32	$s17, $s19, $s17;
+	xor_b32	$s16, $s18, $s16;
+	mul_u32	$s19, $s21, $s13;
+	mul_u32	$s21, $s20, $s13;
+	bitextract_u32	$s18, $s2, 3, 1;
+	and_b32	$s20, $s3, 1;
+	bitextract_u32	$s22, $s3, 1, 1;
+	ld_group_align(4)_width(WAVESIZE)_u32	$s12, [$s12+12];
+	bitextract_u32	$s23, $s1, 3, 1;
+	xor_b32	$s16, $s16, $s21;
+	xor_b32	$s17, $s17, $s19;
+	mul_u32	$s19, $s23, $s12;
+	mul_u32	$s21, $s22, $s15;
+	mul_u32	$s22, $s20, $s14;
+	mul_u32	$s18, $s18, $s12;
+	bitextract_u32	$s20, $s3, 2, 1;
+	ld_group_align(4)_width(WAVESIZE)_u32	$s11, [$s11+16];
+	bitextract_u32	$s23, $s2, 4, 1;
+	and_b32	$s24, $s0, 1;
+	bitextract_u32	$s25, $s0, 1, 1;
+	xor_b32	$s17, $s17, $s18;
+	xor_b32	$s18, $s22, $s21;
+	xor_b32	$s16, $s16, $s19;
+	mul_u32	$s19, $s25, $s15;
+	mul_u32	$s14, $s24, $s14;
+	mul_u32	$s21, $s23, $s11;
+	mul_u32	$s22, $s20, $s13;
+	bitextract_u32	$s15, $s1, 4, 1;
+	mul_u32	$s15, $s15, $s11;
+	bitextract_u32	$s20, $s0, 2, 1;
+	ld_group_align(4)_width(WAVESIZE)_u32	$s6, [$s6+20];
+	bitextract_u32	$s23, $s2, 5, 1;
+	bitextract_u32	$s24, $s3, 3, 1;
+	xor_b32	$s15, $s16, $s15;
+	xor_b32	$s16, $s18, $s22;
+	xor_b32	$s18, $s17, $s21;
+	xor_b32	$s14, $s14, $s19;
+	mul_u32	$s19, $s24, $s12;
+	mul_u32	$s24, $s23, $s6;
+	mul_u32	$s13, $s20, $s13;
+	bitextract_u32	$s17, $s3, 4, 1;
+	bitextract_u32	$s20, $s1, 5, 1;
+	mul_u32	$s21, $s20, $s6;
+	bitextract_u32	$s23, $s1, 6, 1;
+	ld_group_align(4)_width(WAVESIZE)_u32	$s7, [$s7+24];
+	bitextract_u32	$s26, $s2, 6, 1;
+	bitextract_u32	$s27, $s0, 3, 1;
+	xor_b32	$s13, $s14, $s13;
+	mul_u32	$s20, $s17, $s11;
+	ld_group_align(4)_width(WAVESIZE)_u32	$s17, [$s10+36];
+	bitextract_u32	$s22, $s3, 9, 1;
+	ld_group_align(4)_width(WAVESIZE)_u32	$s14, [$s9+40];
+	xor_b32	$s18, $s18, $s24;
+	xor_b32	$s25, $s16, $s19;
+	mul_u32	$s16, $s27, $s12;
+	mul_u32	$s27, $s26, $s7;
+	bitextract_u32	$s28, $s3, 10, 1;
+	xor_b32	$s9, $s15, $s21;
+	mul_u32	$s24, $s23, $s7;
+	bitextract_u32	$s10, $s0, 10, 1;
+	bitextract_u32	$s19, $s2, 11, 1;
+	ld_group_align(4)_width(WAVESIZE)_u32	$s12, [$s8+44];
+	bitextract_u32	$s8, $s3, 11, 1;
+	bitextract_u32	$s26, $s0, 9, 1;
+	xor_b32	$s25, $s25, $s20;
+	mul_u32	$s21, $s28, $s14;
+	mul_u32	$s23, $s22, $s17;
+	bitextract_u32	$s22, $s2, 9, 1;
+	xor_b32	$s18, $s18, $s27;
+	bitextract_u32	$s20, $s2, 10, 1;
+	xor_b32	$s13, $s13, $s16;
+	bitextract_u32	$s15, $s0, 4, 1;
+	mul_u32	$s15, $s15, $s11;
+	mul_u32	$s16, $s8, $s12;
+	mul_u32	$s19, $s19, $s12;
+	mul_u32	$s20, $s20, $s14;
+	mul_u32	$s22, $s22, $s17;
+	bitextract_u32	$s8, $s0, 11, 1;
+	xor_b32	$s11, $s9, $s24;
+	mul_u32	$s8, $s8, $s12;
+	mul_u32	$s9, $s10, $s14;
+	mul_u32	$s10, $s26, $s17;
+	bitextract_u32	$s24, $s1, 11, 1;
+	mul_u32	$s12, $s24, $s12;
+	bitextract_u32	$s24, $s1, 10, 1;
+	mul_u32	$s14, $s24, $s14;
+	bitextract_u32	$s24, $s1, 9, 1;
+	mul_u32	$s17, $s24, $s17;
+	ld_group_align(4)_width(WAVESIZE)_u32	$s24, [$s5+32];
+	bitextract_u32	$s5, $s3, 8, 1;
+	mul_u32	$s27, $s5, $s24;
+	bitextract_u32	$s5, $s2, 8, 1;
+	mul_u32	$s26, $s5, $s24;
+	bitextract_u32	$s5, $s0, 8, 1;
+	mul_u32	$s5, $s5, $s24;
+	bitextract_u32	$s28, $s1, 8, 1;
+	mul_u32	$s24, $s28, $s24;
+	bitextract_u32	$s28, $s3, 5, 1;
+	mul_u32	$s28, $s28, $s6;
+	xor_b32	$s25, $s25, $s28;
+	bitextract_u32	$s28, $s3, 6, 1;
+	mul_u32	$s28, $s28, $s7;
+	xor_b32	$s25, $s25, $s28;
+	bitextract_u32	$s28, $s3, 7, 1;
+	ld_group_align(4)_width(WAVESIZE)_u32	$s3, [$s4+28];
+	mul_u32	$s4, $s28, $s3;
+	xor_b32	$s4, $s25, $s4;
+	xor_b32	$s4, $s4, $s27;
+	xor_b32	$s4, $s4, $s23;
+	xor_b32	$s4, $s4, $s21;
+	bitextract_u32	$s2, $s2, 7, 1;
+	mul_u32	$s2, $s2, $s3;
+	and_b64	$d1, $d1, 4294967295;
+	shl_u64	$d1, $d1, 4;
+	bitextract_u32	$s1, $s1, 7, 1;
+	mul_u32	$s1, $s1, $s3;
+	add_u64	$d0, $d0, $d1;
+	xor_b32	$s18, $s18, $s2;
+	bitextract_u32	$s2, $s0, 7, 1;
+	xor_b32	$s18, $s18, $s26;
+	xor_b32	$s18, $s18, $s22;
+	xor_b32	$s18, $s18, $s20;
+	xor_b32	$s18, $s18, $s19;
+	xor_b32	$s4, $s4, $s16;
+	xor_b32	$s13, $s13, $s15;
+	bitextract_u32	$s15, $s0, 5, 1;
+	mul_u32	$s6, $s15, $s6;
+	xor_b32	$s6, $s13, $s6;
+	bitextract_u32	$s0, $s0, 6, 1;
+	mul_u32	$s0, $s0, $s7;
+	xor_b32	$s0, $s6, $s0;
+	mul_u32	$s2, $s2, $s3;
+	xor_b32	$s0, $s0, $s2;
+	cvt_near_f32_u32	$s2, $s4;
+	cvt_near_f32_u32	$s3, $s18;
+	xor_b32	$s1, $s11, $s1;
+	xor_b32	$s1, $s1, $s24;
+	xor_b32	$s1, $s1, $s17;
+	xor_b32	$s1, $s1, $s14;
+	xor_b32	$s1, $s1, $s12;
+	cvt_near_f32_u32	$s1, $s1;
+	gcn_divrelaxed_ftz_f32	$s1, $s1, 0F4f800000;
+	gcn_divrelaxed_ftz_f32	$s3, $s3, 0F4f800000;
+	gcn_divrelaxed_ftz_f32	$s2, $s2, 0F4f800000;
+	xor_b32	$s0, $s0, $s5;
+	xor_b32	$s0, $s0, $s10;
+	xor_b32	$s0, $s0, $s9;
+	xor_b32	$s0, $s0, $s8;
+	cvt_near_f32_u32	$s0, $s0;
+	gcn_divrelaxed_ftz_f32	$s0, $s0, 0F4f800000;
+	st_v4_global_align(16)_f32	($s1, $s3, $s2, $s0), [$d0];
+	ret;
+};
+
+prog kernel &__OpenCL_QuasiRandomSequence_Scalar_kernel(
+	kernarg_u64 %__global_offset_0,
+	kernarg_u64 %__global_offset_1,
+	kernarg_u64 %__global_offset_2,
+	kernarg_u64 %__printf_buffer,
+	kernarg_u64 %__vqueue_pointer,
+	kernarg_u64 %__aqlwrap_pointer,
+	kernarg_u64 %output,
+	kernarg_u64 %input,
+	kernarg_u64 %shared)
+{
+	pragma "AMD RTI", "ARGSTART:__OpenCL_QuasiRandomSequence_Scalar_kernel";
+	pragma "AMD RTI", "version:3:1:104";
+	pragma "AMD RTI", "device:generic";
+	pragma "AMD RTI", "uniqueid:1025";
+	pragma "AMD RTI", "memory:private:0";
+	pragma "AMD RTI", "memory:region:0";
+	pragma "AMD RTI", "memory:local:0";
+	pragma "AMD RTI", "value:__global_offset_0:u64:1:1:0";
+	pragma "AMD RTI", "value:__global_offset_1:u64:1:1:16";
+	pragma "AMD RTI", "value:__global_offset_2:u64:1:1:32";
+	pragma "AMD RTI", "pointer:__printf_buffer:u8:1:1:48:uav:7:1:RW:0:0:0";
+	pragma "AMD RTI", "value:__vqueue_pointer:u64:1:1:64";
+	pragma "AMD RTI", "value:__aqlwrap_pointer:u64:1:1:80";
+	pragma "AMD RTI", "pointer:output:float:1:1:96:uav:7:4:RW:0:0:0";
+	pragma "AMD RTI", "pointer:input:u32:1:1:112:uav:7:4:RW:0:0:0";
+	pragma "AMD RTI", "pointer:shared:u32:1:1:128:l:7:4:RW:0:0:0";
+	pragma "AMD RTI", "function:1:0";
+	pragma "AMD RTI", "memory:64bitABI";
+	pragma "AMD RTI", "privateid:8";
+	pragma "AMD RTI", "enqueue_kernel:0";
+	pragma "AMD RTI", "kernel_index:1";
+	pragma "AMD RTI", "reflection:0:size_t";
+	pragma "AMD RTI", "reflection:1:size_t";
+	pragma "AMD RTI", "reflection:2:size_t";
+	pragma "AMD RTI", "reflection:3:size_t";
+	pragma "AMD RTI", "reflection:4:size_t";
+	pragma "AMD RTI", "reflection:5:size_t";
+	pragma "AMD RTI", "reflection:6:float*";
+	pragma "AMD RTI", "reflection:7:uint*";
+	pragma "AMD RTI", "reflection:8:uint*";
+	pragma "AMD RTI", "ARGEND:__OpenCL_QuasiRandomSequence_Scalar_kernel";
+
+@__OpenCL_QuasiRandomSequence_Scalar_kernel_entry:
+	// BB#0:
+	ld_kernarg_align(8)_width(all)_u64	$d1, [%__global_offset_0];
+	ld_kernarg_align(8)_width(all)_u64	$d2, [%shared];
+	workitemid_u32	$s0, 0;
+	ld_kernarg_align(8)_width(all)_u64	$d0, [%output];
+	cmp_gt_b1_s32	$c0, $s0, 31;
+	cbr_b1	$c0, @BB1_3;
+	// BB#1:                                // %.lr.ph
+	ld_kernarg_align(8)_width(all)_u64	$d3, [%input];
+	workgroupid_u32	$s1, 0;
+	shl_u32	$s1, $s1, 5;
+	currentworkgroupsize_u32	$s2, 0;
+	workitemid_u32	$s3, 0;
+
+@BB1_2:
+	cvt_s64_s32	$d4, $s3;
+	shl_u64	$d4, $d4, 2;
+	add_u64	$d4, $d2, $d4;
+	cvt_u32_u64	$s4, $d4;
+	add_u32	$s5, $s1, $s3;
+	cvt_u64_u32	$d4, $s5;
+	shl_u64	$d4, $d4, 2;
+	add_u64	$d4, $d3, $d4;
+	ld_global_align(4)_u32	$s5, [$d4];
+	st_group_align(4)_u32	$s5, [$s4];
+	add_u32	$s3, $s3, $s2;
+	cmp_lt_b1_s32	$c0, $s3, 32;
+	cbr_b1	$c0, @BB1_2;
+
+@BB1_3:
+	// %._crit_edge
+	workitemabsid_u32	$s1, 0;
+	cvt_u64_u32	$d3, $s1;
+	add_u64	$d1, $d3, $d1;
+	cvt_u32_u64	$s1, $d2;
+	cvt_u32_u64	$s2, $d2;
+	cvt_u32_u64	$s3, $d2;
+	cvt_u32_u64	$s4, $d2;
+	cvt_u32_u64	$s5, $d2;
+	cvt_u32_u64	$s6, $d2;
+	cvt_u32_u64	$s7, $d2;
+	cvt_u32_u64	$s8, $d2;
+	cvt_u32_u64	$s9, $d2;
+	cvt_u32_u64	$s10, $d2;
+	barrier;
+	ld_group_align(4)_width(WAVESIZE)_u32	$s10, [$s10];
+	and_b32	$s11, $s0, 1;
+	neg_s32	$s11, $s11;
+	and_b32	$s10, $s10, $s11;
+	ld_group_align(4)_width(WAVESIZE)_u32	$s9, [$s9+4];
+	bitextract_u32	$s11, $s0, 1, 1;
+	neg_s32	$s11, $s11;
+	and_b32	$s9, $s9, $s11;
+	xor_b32	$s9, $s9, $s10;
+	ld_group_align(4)_width(WAVESIZE)_u32	$s8, [$s8+8];
+	bitextract_u32	$s10, $s0, 2, 1;
+	neg_s32	$s10, $s10;
+	and_b32	$s10, $s8, $s10;
+	bitextract_u32	$s8, $s0, 4, 1;
+	ld_group_align(4)_width(WAVESIZE)_u32	$s11, [$s7+12];
+	bitextract_u32	$s7, $s0, 3, 1;
+	neg_s32	$s12, $s7;
+	xor_b32	$s7, $s10, $s9;
+	and_b32	$s9, $s11, $s12;
+	ld_group_align(4)_width(WAVESIZE)_u32	$s6, [$s6+16];
+	neg_s32	$s8, $s8;
+	ld_group_align(4)_width(WAVESIZE)_u32	$s10, [$s5+20];
+	bitextract_u32	$s5, $s0, 5, 1;
+	neg_s32	$s11, $s5;
+	ld_group_align(4)_width(WAVESIZE)_u32	$s4, [$s4+24];
+	bitextract_u32	$s5, $s0, 6, 1;
+	neg_s32	$s12, $s5;
+	xor_b32	$s5, $s9, $s7;
+	and_b32	$s4, $s4, $s12;
+	and_b32	$s7, $s10, $s11;
+	and_b32	$s8, $s6, $s8;
+	bitextract_u32	$s9, $s0, 9, 1;
+	bitextract_u32	$s6, $s0, 8, 1;
+	ld_group_align(4)_width(WAVESIZE)_u32	$s3, [$s3+32];
+	neg_s32	$s6, $s6;
+	ld_group_align(4)_width(WAVESIZE)_u32	$s2, [$s2+36];
+	neg_s32	$s9, $s9;
+	and_b64	$d1, $d1, 4294967295;
+	shl_u64	$d1, $d1, 2;
+	xor_b32	$s5, $s8, $s5;
+	xor_b32	$s5, $s7, $s5;
+	xor_b32	$s4, $s4, $s5;
+	add_u64	$d0, $d0, $d1;
+	and_b32	$s2, $s2, $s9;
+	and_b32	$s3, $s3, $s6;
+	ld_group_align(4)_width(WAVESIZE)_u32	$s1, [$s1+28];
+	bitextract_u32	$s0, $s0, 7, 1;
+	neg_s32	$s0, $s0;
+	and_b32	$s0, $s1, $s0;
+	xor_b32	$s0, $s0, $s4;
+	xor_b32	$s0, $s3, $s0;
+	xor_b32	$s0, $s2, $s0;
+	cvt_near_f32_u32	$s0, $s0;
+	mul_ftz_f32	$s0, $s0, 0F2f800000;
+	st_global_align(4)_f32	$s0, [$d0];
+	ret;
+};

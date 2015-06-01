@@ -1,0 +1,1 @@
+/usr/bin/c++     -Wall -std=c++11 -pthread -D __STDC_LIMIT_MACROS -D __STDC_CONSTANT_MACROS  -D __STDC_FORMAT_MACROS -fno-rtti -fvisibility-inlines-hidden    CMakeFiles/HSAILasm.dir/HSAILAsm.cpp.o  -o HSAILasm -rdynamic ../libHSAIL/libhsail.a /usr/lib/llvm-3.4/lib/libLLVMSupport.a /usr/local/lib/libelf.so -Wl,-Bstatic -ldwarf -Wl,-Bdynamic -lcurses -ldl -Wl,-rpath,/usr/local/lib 
